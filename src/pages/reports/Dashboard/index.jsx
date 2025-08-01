@@ -5,6 +5,7 @@ import { spaceVProp } from '@/utils/prop';
 import AssetBar from './AssetBar';
 import BalanceSheet from './BalanceSheet';
 import DonutCategory from './DonutCategory';
+import BalanceLineChart from './BalanceLineChart';
 import t from '@/utils/i18n';
 import styles from './index.less';
 
@@ -13,6 +14,7 @@ export default () => {
     <PageContainer title={false}>
       <Space {...spaceVProp}>
         <AssetBar />
+        <BalanceLineChart />
         <BalanceSheet />
         <Row gutter={12} className={styles['pie-row']}>
           <Col span={12}>

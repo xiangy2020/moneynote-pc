@@ -49,3 +49,10 @@ export async function balance() {
     method: 'GET',
   });
 }
+
+export async function dailyBalance(params) {
+  return request(`${prefix}/daily-balance`, {
+    method: 'GET',
+    params: params,
+  });
+}
